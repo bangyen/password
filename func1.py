@@ -14,9 +14,15 @@ def generate(m):
     for i in range(len(m)):
         li=list(m[i])
         mm.append(li)
-    mould=mould.format(mm[0][0],mm[0][1],mm[0][2],mm[0][3],mm[0][4])
-    mm[0]=mould
-    mould=mould.format(mm[1][0],mm[1][1],mm[1][2],mm[1][3],mm[1][4])
-    mm[1]=mould
-    print(mm)
+    lll=0
+    for i in mm:
+        if lll == len(mm):
+            break
+        o1=i[0]
+        o2=i[1]
+        o3=i[2]
+        o4=i[3]
+        o5=i[4]
+        mould.format(o1,o2,o3,o4,o5)
+        lll+=1
 generate("abc")
