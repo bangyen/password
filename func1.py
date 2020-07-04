@@ -1,6 +1,5 @@
 import pattern as p 
 import dict1 as d
-mould="(-({})=({})=({})=({})=({})-)"
 pattern=p.pattern
 def generate(m):
     global mould
@@ -14,15 +13,20 @@ def generate(m):
     for i in range(len(m)):
         li=list(m[i])
         mm.append(li)
+    return mm
+def generate_password(m):
+    mould="(-({})=({})=({})=({})=({})-)"
     lll=0
-    for i in mm:
-        if lll == len(mm):
+    for i in m:
+        if lll == len(m):
             break
         o1=i[0]
         o2=i[1]
         o3=i[2]
         o4=i[3]
         o5=i[4]
-        mould.format(o1,o2,o3,o4,o5)
+        m[lll]=mould.format(o1,o2,o3,o4,o5)
         lll+=1
-generate("abc")
+    return m
+j=generate_password(generate("abcgcg"))
+print(j)
