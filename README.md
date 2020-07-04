@@ -1,4 +1,7 @@
 # password
 password is a `password generater`
 
-## *Usege*
+## *Examples*
+```
+>>> import password.main as p
+>>>  p.
