@@ -10,4 +10,14 @@ If you want to use past versions of this project, unzip the corresponding tar.xz
 >>> pp=p.Password()
 >>> j=pp.generate_password("abcd")
 >>> print(jj)
+['(-(|)=(@)=(~)=(~)=(~)-)', '(-(|)=(&)=(~)=(~)=(~)-)', '(-(|)=(#)=(~)=(~)=(~)-)', '(-(|)=($)=(~)=(~)=(~)-)']
+>>> pp.to_file("f."txt)
+>>> exit()
+$ cat f.txt
+(-(|)=(@)=(~)=(~)=(~)-)
+(-(|)=(&)=(~)=(~)=(~)-)
+(-(|)=(#)=(~)=(~)=(~)-)
+(-(|)=($)=(~)=(~)=(~)-)
+
+
 ```
