@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
 	name='password',
-	version="0.1.0",
+	version="0.1.1",
 	keywords=['password','generate'],
 	author='suchenguo',
 	author_email='guozhenduo1@163.com',
