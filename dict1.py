@@ -1,2 +1,2 @@
 def get_key(dct, value):
-    return list(filter(lambda k:dct[k] == value, dct))
+    return [key for key in dct if dct[key] == value]
