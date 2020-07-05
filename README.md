@@ -7,7 +7,7 @@ If you want to use past versions of this project, unzip the corresponding tar.xz
 ## *Examples*
 ```
 >>> import password.main as p
->>>  p.generate_password(p.generate("name"))
-['(-(|)=(&)=(&)=(~)=(~)-)', '(-(|)=(@)=(~)=(~)=(~)-)', '(-(|)=(@)=(&)=(~)=(~)-)', '(-(|)=(<)=(~)=(~)=(~)-)']
->>> 
+>>> pp=p.Password()
+>>> j=pp.generate_password("abcd")
+>>> print(jj)
 ```
